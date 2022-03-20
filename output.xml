@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220320 10:50:05.238" rpa="false" schemaversion="2">
+<suite id="s1" name="PythonRobotFrameworkWorspace" source="E:\PythonRobotFrameworkWorspace">
+<suite id="s1-s1" name="Tests" source="E:\PythonRobotFrameworkWorspace\tests">
+<suite id="s1-s1-s1" name="testDemo3" source="E:\PythonRobotFrameworkWorspace\tests\testDemo3.robot">
+<test id="s1-s1-s1-t1" name="Select the form and navigate to Child Window">
+<kw name="Open the browser with the Mortgage payment url" library="resource" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${browser_name}</arg>
+<arg>executable_path=C:/Users/panda/Downloads/chromedriver_win32/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220320 10:50:06.117" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220320 10:50:06.116" endtime="20220320 10:50:10.401"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220320 10:50:10.405" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<status status="PASS" starttime="20220320 10:50:10.402" endtime="20220320 10:50:13.411"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220320 10:50:13.411" endtime="20220320 10:50:13.850"/>
+</kw>
+<status status="PASS" starttime="20220320 10:50:06.110" endtime="20220320 10:50:13.850"/>
+</kw>
+<kw name="Fill the Login Details and select the User option">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='username']</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220320 10:50:13.854" level="INFO">Typing text 'rahulshettyacademy' into text field 'xpath://input[@id='username']'.</msg>
+<status status="PASS" starttime="20220320 10:50:13.852" endtime="20220320 10:50:14.505"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220320 10:50:14.507" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20220320 10:50:14.653" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220320 10:50:14.853" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220320 10:50:14.506" endtime="20220320 10:50:14.854"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//label[@class='customradio'])[2]//span[text()=' User']/following-sibling::input/following-sibling::span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220320 10:50:14.855" level="INFO">Clicking element 'xpath:(//label[@class='customradio'])[2]//span[text()=' User']/following-sibling::input/following-sibling::span'.</msg>
+<status status="PASS" starttime="20220320 10:50:14.854" endtime="20220320 10:50:15.106"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220320 10:50:15.106" endtime="20220320 10:50:15.944"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:button[id='okayBtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220320 10:50:15.945" level="INFO">Clicking element 'css:button[id='okayBtn']'.</msg>
+<status status="PASS" starttime="20220320 10:50:15.944" endtime="20220320 10:50:16.148"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220320 10:50:16.148" endtime="20220320 10:50:16.620"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@class='form-control']</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220320 10:50:16.621" level="INFO">Selecting options from selection list '//select[@class='form-control']' by value teach.</msg>
+<status status="PASS" starttime="20220320 10:50:16.620" endtime="20220320 10:50:16.902"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220320 10:50:16.904" level="INFO">Selecting checkbox 'id:terms'.</msg>
+<status status="PASS" starttime="20220320 10:50:16.903" endtime="20220320 10:50:17.317"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>id:terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220320 10:50:17.319" level="INFO">Verifying checkbox 'id:terms' is selected.</msg>
+<status status="PASS" starttime="20220320 10:50:17.318" endtime="20220320 10:50:17.472"/>
+</kw>
+<status status="PASS" starttime="20220320 10:50:13.851" endtime="20220320 10:50:17.473"/>
+</kw>
+<kw name="Close Browser Session" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220320 10:50:17.474" endtime="20220320 10:50:20.334"/>
+</kw>
+<status status="PASS" starttime="20220320 10:50:17.473" endtime="20220320 10:50:20.335"/>
+</kw>
+<tag>Sanity</tag>
+<status status="PASS" starttime="20220320 10:50:06.108" endtime="20220320 10:50:20.335"/>
+</test>
+<doc>To validate the Login form</doc>
+<status status="PASS" starttime="20220320 10:50:05.336" endtime="20220320 10:50:20.337"/>
+</suite>
+<suite id="s1-s1-s2" name="testDemo5PageObjectModelTestClass" source="E:\PythonRobotFrameworkWorspace\tests\testDemo5PageObjectModelTestClass.robot">
+<test id="s1-s1-s2-t1" name="Validate Successful Login">
+<kw name="Open the browser with the Mortgage payment url" library="resource" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${browser_name}</arg>
+<arg>executable_path=C:/Users/panda/Downloads/chromedriver_win32/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220320 10:50:20.411" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220320 10:50:20.410" endtime="20220320 10:50:25.505"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220320 10:50:25.507" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<status status="PASS" starttime="20220320 10:50:25.505" endtime="20220320 10:50:28.330"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220320 10:50:28.330" endtime="20220320 10:50:28.608"/>
+</kw>
+<status status="PASS" starttime="20220320 10:50:20.409" endtime="20220320 10:50:28.608"/>
+</kw>
+<kw name="Fill the login Form" library="LandingPage">
+<arg>${user_name}</arg>
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='username']</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220320 10:50:28.611" level="INFO">Typing text 'Subhransu' into text field 'xpath://input[@id='username']'.</msg>
+<status status="PASS" starttime="20220320 10:50:28.610" endtime="20220320 10:50:29.131"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220320 10:50:29.133" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20220320 10:50:29.314" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220320 10:50:29.466" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220320 10:50:29.132" endtime="20220320 10:50:29.467"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:input[id='signInBtn']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220320 10:50:29.468" level="INFO">Clicking button 'css:input[id='signInBtn']'.</msg>
+<status status="PASS" starttime="20220320 10:50:29.467" endtime="20220320 10:50:29.713"/>
+</kw>
+<status status="PASS" starttime="20220320 10:50:28.609" endtime="20220320 10:50:29.713"/>
+</kw>
+<kw name="wait until Element Is Visibles" library="LandingPage">
+<arg>${Error_Message_Login}</arg>
+<kw name="Wait Until Element is Visible On the WebPage" library="resource">
+<arg>${Element}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${WebElementInterface}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220320 10:50:29.716" endtime="20220320 10:50:31.963"/>
+</kw>
+<status status="PASS" starttime="20220320 10:50:29.715" endtime="20220320 10:50:31.964"/>
+</kw>
+<status status="PASS" starttime="20220320 10:50:29.713" endtime="20220320 10:50:31.964"/>
+</kw>
+<kw name="verify error message is correct" library="LandingPage">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${Error_Message_Login}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220320 10:50:32.066" level="INFO">${result} = Incorrect username/password.</msg>
+<status status="PASS" starttime="20220320 10:50:31.966" endtime="20220320 10:50:32.066"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${result}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220320 10:50:32.067" endtime="20220320 10:50:32.068"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Error_Message_Login}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220320 10:50:32.070" level="INFO">Verifying element 'css:.alert.alert-danger.col-md-12' contains exact text 'Incorrect username/password.'.</msg>
+<status status="PASS" starttime="20220320 10:50:32.069" endtime="20220320 10:50:32.152"/>
+</kw>
+<status status="PASS" starttime="20220320 10:50:31.965" endtime="20220320 10:50:32.153"/>
+</kw>
+<kw name="Close Browser Session" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220320 10:50:32.157" endtime="20220320 10:50:34.926"/>
+</kw>
+<status status="PASS" starttime="20220320 10:50:32.153" endtime="20220320 10:50:34.927"/>
+</kw>
+<tag>Sanity</tag>
+<status status="PASS" starttime="20220320 10:50:20.408" endtime="20220320 10:50:34.927"/>
+</test>
+<doc>To validate the Login form</doc>
+<status status="PASS" starttime="20220320 10:50:20.341" endtime="20220320 10:50:34.929"/>
+</suite>
+<status status="PASS" starttime="20220320 10:50:05.328" endtime="20220320 10:50:34.936"/>
+</suite>
+<status status="PASS" starttime="20220320 10:50:05.244" endtime="20220320 10:50:34.943"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="PythonRobotFrameworkWorspace">PythonRobotFrameworkWorspace</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Tests">PythonRobotFrameworkWorspace.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="testDemo3">PythonRobotFrameworkWorspace.Tests.testDemo3</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2" name="testDemo5PageObjectModelTestClass">PythonRobotFrameworkWorspace.Tests.testDemo5PageObjectModelTestClass</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

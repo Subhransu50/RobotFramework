@@ -1,0 +1,6 @@
+datasources:d2a763015196029dbb0b5b6c1f294bb053ae5619
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:d99ee3f781f740a1ee69dc4f0a30dcea2d3df498
+--test testDemo2.Validate Successful Login
+--test testDemo2.Validate Cards display in the Shopping Page

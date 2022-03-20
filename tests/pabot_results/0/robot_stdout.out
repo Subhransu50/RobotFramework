@@ -1,0 +1,9 @@
+==============================================================================
+testDemo2 :: To validate the Login form                                       
+==============================================================================
+Validate Successful Login                                             | PASS |
+------------------------------------------------------------------------------
+testDemo2 :: To validate the Login form                               | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  E:\PythonRobotFrameworkWorspace\tests\pabot_results\0\output.xml
