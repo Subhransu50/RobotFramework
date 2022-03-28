@@ -6,6 +6,7 @@ Library     ../customLibraries/Shop.py
 Test Setup      Open the browser with the Mortgage payment url
 Test Teardown   Close Browser Session
 Resource        resource.robot
+
 *** Variables ***
 ${Error_Message_Login}   css:.alert.alert-danger.col-md-12
 ${Home_Icon}      xpath://a[@class='nav-link' and text()='Home']
