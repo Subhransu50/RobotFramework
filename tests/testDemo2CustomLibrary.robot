@@ -14,12 +14,14 @@ ${Home_Icon}      xpath://a[@class='nav-link' and text()='Home']
 
 *** Test Cases ***
 Validate Successful Login
+    [Tags]      Regression
      #Open the browser with the Mortgage payment url
      Fill the login Form    ${user_name}    ${password}
      wait until Element Is Visibles   ${Error_Message_Login}
      verify error message is correct
 
 Validate Cards display in the Shopping Page
+    [Tags]      Regression
     Fill the login Form     ${valid_user_name}  ${valid_password}
     wait until Element Is Visibles     ${Home_Icon}
     Verify CardTitles in the shop page
